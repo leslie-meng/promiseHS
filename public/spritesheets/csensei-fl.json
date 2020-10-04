@@ -1,0 +1,42 @@
+{"frames": {
+
+"catch-fl0.png":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+	"sourceSize": {"w":16,"h":28},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"catch-fl1.png":
+{
+	"frame": {"x":0,"y":28,"w":16,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+	"sourceSize": {"w":16,"h":28},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"catch-fl2.png":
+{
+	"frame": {"x":0,"y":56,"w":16,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+	"sourceSize": {"w":16,"h":28},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"animations": {
+	"catch-fl": ["catch-fl0.png","catch-fl1.png","catch-fl2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "csensei-fl.png",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":84},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:400010199bdfbac12b3664890b67807c:7e9c41968dcfb57ad55e4787dbeaa39e:e87b6f0865caffe1998f2d5c689dfc15$"
+}
+}

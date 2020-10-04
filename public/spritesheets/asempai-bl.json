@@ -1,0 +1,42 @@
+{"frames": {
+
+"asempai-bl0.png":
+{
+	"frame": {"x":0,"y":0,"w":17,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
+	"sourceSize": {"w":17,"h":29},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"asempai-bl1.png":
+{
+	"frame": {"x":17,"y":0,"w":17,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
+	"sourceSize": {"w":17,"h":29},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"asempai-bl2.png":
+{
+	"frame": {"x":34,"y":0,"w":17,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
+	"sourceSize": {"w":17,"h":29},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"animations": {
+	"asempai-bl": ["asempai-bl0.png","asempai-bl1.png","asempai-bl2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "asempai-bl.png",
+	"format": "RGBA8888",
+	"size": {"w":51,"h":29},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:c2610dc8f7776b8f8fcb54c5e514d843:03fbdd7a2bf034342a82692556be7864:b69c622600af9f9857bbb4a7db76378d$"
+}
+}

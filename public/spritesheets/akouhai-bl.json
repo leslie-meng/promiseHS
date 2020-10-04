@@ -1,0 +1,42 @@
+{"frames": {
+
+"akouhai-bl0.png":
+{
+	"frame": {"x":0,"y":0,"w":16,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+	"sourceSize": {"w":16,"h":28},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"akouhai-bl1.png":
+{
+	"frame": {"x":0,"y":28,"w":16,"h":28},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
+	"sourceSize": {"w":16,"h":28},
+	"anchor": {"x":0.5,"y":0.5}
+},
+"akouhai-bl2.png":
+{
+	"frame": {"x":0,"y":56,"w":16,"h":29},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":29},
+	"sourceSize": {"w":16,"h":29},
+	"anchor": {"x":0.5,"y":0.5}
+}},
+"animations": {
+	"akouhai-bl": ["akouhai-bl0.png","akouhai-bl1.png","akouhai-bl2.png"]
+},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "akouhai-bl.png",
+	"format": "RGBA8888",
+	"size": {"w":16,"h":85},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:f68b5c06ec77b372ba6f4bf3177b6ffb:6fc06edddac5a0099054d17dd84c13e5:c78521160c4d74b8db247248e7631d79$"
+}
+}
