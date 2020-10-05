@@ -5,7 +5,8 @@
 	"main": "server/index.js",
 	"scripts": {
 		"test": "test",
-		"start": "nodemon server/index.js & webpack -w"
+		"start": "nodemon server/index.js & webpack -w",
+		"deploy": "script/deploy"
 	},
 	"author": "LiMe",
 	"license": "ISC",
