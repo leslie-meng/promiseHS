@@ -173,7 +173,7 @@ function setup() {
 
 	//Left arrow key `press` method
 	left.press = () => {
-		//Change the cat's velocity when the key is pressed
+		//Change the player's velocity when the key is pressed
 
 		if (senpai.vx === 0 && senpai.vy === 0) {
 			senpai.textures = senpaiDirection.left;
@@ -184,16 +184,6 @@ function setup() {
 			}
 		}
 	};
-
-	//Left arrow key `release` method
-	// left.release = () => {
-	// 	//If the left arrow has been released, and the right arrow isn't down,
-	// 	//and the cat isn't moving vertically:
-	// 	//Stop the cat
-	// 	if (!right.isDown && kouhai.vy === 0) {
-	// 		kouhai.vx = 0;
-	// 	}
-	// };
 
 	//Up
 	up.press = () => {
@@ -206,11 +196,6 @@ function setup() {
 			}
 		}
 	};
-	// up.release = () => {
-	// 	if (!down.isDown && kouhai.vx === 0) {
-	// 		kouhai.vy = 0;
-	// 	}
-	// };
 
 	//Right
 	right.press = () => {
@@ -223,11 +208,6 @@ function setup() {
 			}
 		}
 	};
-	// right.release = () => {
-	// 	if (!left.isDown && kouhai.vy === 0) {
-	// 		kouhai.vx = 0;
-	// 	}
-	// };
 
 	//Down
 	down.press = () => {
@@ -244,13 +224,13 @@ function setup() {
 	};
 	//spacebar
 	space.press = () => {
-		if (Math.abs(senpai.vx) > 0 || Math.abs(senpai.vy) > 0) {
+		if (Math.abs(senpai.vx) === 4 || Math.abs(senpai.vy) === 4) {
 			senpai.vx *= 3;
 			senpai.vy *= 3;
 		}
 	};
 	space.release = () => {
-		if (Math.abs(senpai.vx) > 0 || Math.abs(senpai.vy) > 0) {
+		if (Math.abs(senpai.vx) > 4 || Math.abs(senpai.vy) > 4) {
 			senpai.vx /= 3;
 			senpai.vy /= 3;
 		}
@@ -294,17 +274,17 @@ function play(delta) {
 	senpai.x += senpai.vx;
 	senpai.y += senpai.vy;
 	if (senpai.x < 100) {
+		senpai.x += Math.abs(senpai.vx);
 		senpai.vx = 0;
-		// senpai.vy = 0;
 	} else if (senpai.x > app.screen.width - 100) {
+		senpai.x -= Math.abs(senpai.vx);
 		senpai.vx = 0;
-		// senpai.vy = 0;
 	}
 	if (senpai.y < 100) {
-		// senpai.vx = 0;
+		senpai.y += Math.abs(senpai.vy);
 		senpai.vy = 0;
 	} else if (senpai.y > app.screen.height - 185) {
-		// senpai.vx = 0;
+		senpai.y -= Math.abs(senpai.vy);
 		senpai.vy = 0;
 	}
 	//sensei-directions
@@ -314,21 +294,16 @@ function play(delta) {
 		sensei.textures = senseiDirection.right;
 		sensei.play();
 		sensei.vx = 2;
-		// senpai.vy = 0;
 	} else if (sensei.x > app.screen.width - 100) {
 		sensei.textures = senseiDirection.left;
 		sensei.play();
 		sensei.vx = -2;
-
-		// senpai.vy = 0;
 	}
 	if (sensei.y < 100) {
-		// senpai.vx = 0;
 		sensei.textures = senseiDirection.right;
 		sensei.play();
 		sensei.vy = 2;
 	} else if (sensei.y > app.screen.height - 185) {
-		// senpai.vx = 0;
 		sensei.textures = senseiDirection.up;
 		sensei.play();
 		sensei.vy = -2;
