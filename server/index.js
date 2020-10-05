@@ -24,6 +24,5 @@ app.use((err, req, res, next) => {
 	console.error(err);
 });
 app.listen(process.env.PORT || 5000, () => {
-	let port = server.address().port;
-	console.log(`Hurry! class is starting @ Port ${port}`);
+	console.log(`Hurry! class is starting!`);
 });
