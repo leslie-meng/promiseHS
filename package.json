@@ -5,8 +5,10 @@
 	"main": "server/index.js",
 	"scripts": {
 		"test": "test",
-		"start": "nodemon server/index.js & webpack -w",
-		"deploy": "script/deploy"
+		"build-client-watch": "webpack -w",
+		"start": "node server/index.js",
+		"deploy": "script/deploy",
+		"start-dev": "npm run build-client-watch & npm run start"
 	},
 	"author": "LiMe",
 	"license": "ISC",
