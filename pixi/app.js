@@ -1,5 +1,5 @@
-import { myVertex, myFragment } from "./myVertex.js";
-// make a new app & append the appView to appropriate div
+const { Rectangle } = require("pixi.js");
+
 const app = new PIXI.Application({
 	transparent: true,
 	width: (window.innerWidth / 3) * 2,
@@ -7,8 +7,6 @@ const app = new PIXI.Application({
 });
 let pixiDiv = document.getElementById("pixi");
 pixiDiv.appendChild(app.view);
-
-//initialize all sprite variables
 let kouhai;
 let senpai;
 let sensei;
@@ -17,70 +15,56 @@ let senseiDirection = {};
 let promise = false;
 let book;
 let walls = [];
-
-// //making a filter for box shadows
-// const filter = new PIXI.Filter(myVertex, myFragment);
-// // first is the horizontal shift, positive is to the right
-// // second is the same as scaleY
-// filter.uniforms.shadowDirection = [0.5, 0.5];
-// filter.uniforms.floorY = 50;
-// // how big is max shadow shift to the side?
-// // try to switch that off ;)
-// filter.padding = 25;
-
-//making different window views within the PIXIJS canvas
-
 //game rect
 let gameRect = new PIXI.Graphics();
 gameRect.beginFill(0x66ccff);
 gameRect.lineStyle(5, 0xffffff, 1);
 gameRect.drawRect(75, 85, app.screen.width - 155, app.screen.height - 250);
 gameRect.endFill;
-//gameRect.filters = [filter];
 app.stage.addChild(gameRect);
-
 //inventory window
 let inventory = new PIXI.Graphics();
 inventory.beginFill(0x66ccff);
 inventory.lineStyle(5, 0xffffff, 1);
 inventory.drawRect(75, 10, app.screen.width - 155, 50);
 inventory.endFill;
-//inventory.filters = [filter];
 app.stage.addChild(inventory);
-
 //info window
 let info = new PIXI.Graphics();
 info.beginFill(0xffffff);
 info.lineStyle(5, 0x66ccff, 1);
 info.drawRect(75, app.screen.height - 130, app.screen.width - 155, 100);
 info.endFill;
-//info.filters = [filter];
 app.stage.addChild(info);
-const pointers = new PIXI.TextStyle({
-	fontFamily: "Arial",
+
+//fancy font
+const style = new PIXI.TextStyle({
+	fontFamily: "Georgia",
 	fontSize: 20,
 	fontWeight: "bold",
-	fill: "#66ccff", // gradient
-
+	fill: "#000000", // gradient
 	dropShadow: true,
-	dropShadowColor: "#000000",
-	dropShadowBlur: 0,
-	dropShadowAngle: Math.PI / 4,
+	dropShadowColor: "#66ccff",
+	dropShadowBlur: 1,
+	dropShadowAngle: Math.PI / 6,
 	dropShadowDistance: 2,
 	wordWrap: true,
 	wordWrapWidth: app.screen.width - 300,
 	lineJoin: "round",
 });
+
+const richText = new PIXI.Text("inventory", style);
+richText.x = 85;
+richText.y = 20;
+
+app.stage.addChild(richText);
 const helpText = new PIXI.Text(
 	"Collect your book and then return to Async-Kouhai!",
-	pointers
+	style
 );
-helpText.x = 200;
-helpText.y = app.screen.height - 100;
+helpText.x = 180;
+helpText.y = app.screen.height - 110;
 app.stage.addChild(helpText);
-
-//Fun filters and add-ons
-
 //speed lines
 const trailTexture = PIXI.Texture.from("spritesheets/trail.png");
 const historyX = [];
@@ -97,10 +81,13 @@ for (let i = 0; i < historySize; i++) {
 for (let i = 0; i < ropeSize; i++) {
 	points.push(new PIXI.Point(0, 0));
 }
+
 // Create the rope
 const rope = new PIXI.SimpleRope(trailTexture, points);
+
 // Set the blendmode
 rope.blendmode = PIXI.BLEND_MODES.ADD;
+
 app.stage.addChild(rope);
 
 app.loader
@@ -344,6 +331,7 @@ function makeWalls() {
 }
 function reset() {
 	promise = false;
+	makeWalls();
 	kouhai.x = Math.floor(
 		Math.random() * Math.floor(app.screen.width - 100 - 100) + 100
 	);
@@ -366,8 +354,6 @@ function reset() {
 	sensei.play();
 	sensei.vx = 2;
 	helpText.text = "Collect your book and then return to Async-Kouhai!";
-
-	makeWalls();
 }
 function collision(movingSprite, stillSprite) {
 	const bounds1 = movingSprite.getBounds();
@@ -416,8 +402,7 @@ function checkPosition() {
 		senpai.vx = senpai.vy = 0;
 		helpText.text = "Got your book! Now return to Async-Kouhai!";
 		book.position.set(210, 23);
-	}
-	if (collision(senpai, sensei)) {
+	} else if (collision(senpai, sensei)) {
 		helpText.text = `Catch-Sensei: "No running in the halls!"`;
 		sensei.vx = sensei.vy = 0;
 		setTimeout(() => reset(), 1500);
@@ -505,24 +490,3 @@ function cubicInterpolation(array, t, tangentFactor) {
 		(t3 - t2) * m[1]
 	);
 }
-//fancy font
-const style = new PIXI.TextStyle({
-	fontFamily: "Arial",
-	fontSize: 20,
-	fontWeight: "bold",
-	fill: "#ffffff", // gradient
-	dropShadow: true,
-	dropShadowColor: "#000000",
-	dropShadowBlur: 0,
-	dropShadowAngle: Math.PI / 4,
-	dropShadowDistance: 2,
-	wordWrap: true,
-	wordWrapWidth: 440,
-	lineJoin: "round",
-});
-
-const richText = new PIXI.Text("inventory", style);
-richText.x = 85;
-richText.y = 20;
-
-app.stage.addChild(richText);
