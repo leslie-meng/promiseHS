@@ -17,6 +17,7 @@
 		"file-loader": "^6.1.0",
 		"fs": "0.0.1-security",
 		"morgan": "^1.10.0",
+		"node": "^14.13.0",
 		"nodemon": "^2.0.4",
 		"path": "^0.12.7",
 		"pixi.js": "^5.3.3",
