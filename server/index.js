@@ -23,6 +23,7 @@ app.use((err, req, res, next) => {
 	res.status(err.status || 500).send(err.message || "Internal server error");
 	console.error(err);
 });
-app.listen(3000, () => {
-	console.log(`Hurry! class is starting @ Port 3000`);
+app.listen(process.env.PORT || 5000, () => {
+	let port = server.address().port;
+	console.log(`Hurry! class is starting @ Port ${port}`);
 });
