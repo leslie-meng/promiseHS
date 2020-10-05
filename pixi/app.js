@@ -15,6 +15,16 @@ let senseiDirection = {};
 let promise = false;
 let book;
 let walls = [];
+//fancy font
+const style = new PIXI.TextStyle({
+	fontFamily: "Georgia",
+	fontSize: 20,
+	fontWeight: "bold",
+	fill: "#000000", // gradient
+	wordWrap: true,
+	wordWrapWidth: app.screen.width - 300,
+	lineJoin: "round",
+});
 //game rect
 let gameRect = new PIXI.Graphics();
 gameRect.beginFill(0x66ccff);
@@ -29,6 +39,17 @@ inventory.lineStyle(5, 0xffffff, 1);
 inventory.drawRect(75, 10, app.screen.width - 155, 50);
 inventory.endFill;
 app.stage.addChild(inventory);
+//reset button
+let resetButton = new PIXI.Graphics();
+resetButton.beginFill(0xffffff);
+resetButton.drawRoundedRect(app.screen.width - 300, 15, 100, 40, 16);
+resetButton.endFill;
+resetButton.hitArea = new PIXI.Rectangle(app.screen.width - 300, 15, 100, 40);
+app.stage.addChild(resetButton);
+const resetText = new PIXI.Text("Reset", style);
+resetText.x = app.screen.width - 285;
+resetText.y = 20;
+app.stage.addChild(resetText);
 //info window
 let info = new PIXI.Graphics();
 info.beginFill(0xffffff);
@@ -36,22 +57,6 @@ info.lineStyle(5, 0x66ccff, 1);
 info.drawRect(75, app.screen.height - 130, app.screen.width - 155, 100);
 info.endFill;
 app.stage.addChild(info);
-
-//fancy font
-const style = new PIXI.TextStyle({
-	fontFamily: "Georgia",
-	fontSize: 20,
-	fontWeight: "bold",
-	fill: "#000000", // gradient
-	dropShadow: true,
-	dropShadowColor: "#66ccff",
-	dropShadowBlur: 1,
-	dropShadowAngle: Math.PI / 6,
-	dropShadowDistance: 2,
-	wordWrap: true,
-	wordWrapWidth: app.screen.width - 300,
-	lineJoin: "round",
-});
 
 const richText = new PIXI.Text("inventory", style);
 richText.x = 85;
@@ -153,12 +158,17 @@ function setup() {
 	app.stage.addChild(sensei);
 	app.stage.addChild(book);
 	reset();
+	resetButton.interactive = true;
+	resetButton.buttonMode = true;
+
+	resetButton.on("pointerdown", (event) => onClick(resetButton));
+	resetButton.on("pointerup", (event) => (resetButton.tint = 0xffffff));
+
 	// Animate the rotation
 	let left = keyboard("ArrowLeft"),
 		up = keyboard("ArrowUp"),
 		right = keyboard("ArrowRight"),
-		down = keyboard("ArrowDown"),
-		enter = keyboard("");
+		down = keyboard("ArrowDown");
 
 	//Left arrow key `press` method
 	left.press = () => {
@@ -260,7 +270,10 @@ function setup() {
 		}
 	});
 }
-
+function onClick(object) {
+	object.tint = 0xa9a9a9;
+	reset();
+}
 function gameLoop(delta) {
 	//Update the current game state:
 	state(delta);
@@ -313,7 +326,7 @@ function play(delta) {
 	}
 }
 function makeWalls() {
-	let spacing = app.screen.width / 11,
+	let spacing = app.screen.width / 12,
 		xOffset = 100;
 	for (let i = 0; i < 9; i++) {
 		if (walls[i]) app.stage.removeChild(walls[i].sprite);
@@ -412,7 +425,7 @@ function checkPosition() {
 			senpai.vx = senpai.vy = 0;
 			setTimeout(() => reset(), 1500);
 		} else {
-			helpText.text = `Async-Kouhai: "That's no good, senpai! You need to keep your promises."`;
+			helpText.text = `Async-Kouhai: "That's no good, senpai! It looks like you returned in error!"`;
 			senpai.vx = senpai.vy = 0;
 			setTimeout(() => reset(), 1500);
 		}
