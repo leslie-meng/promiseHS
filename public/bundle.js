@@ -57489,7 +57489,8 @@ function setup() {
   var left = keyboard("ArrowLeft"),
       up = keyboard("ArrowUp"),
       right = keyboard("ArrowRight"),
-      down = keyboard("ArrowDown"); //Left arrow key `press` method
+      down = keyboard("ArrowDown"),
+      space = keyboard(" " || false); //Left arrow key `press` method
 
   left.press = function () {
     //Change the cat's velocity when the key is pressed
@@ -57498,7 +57499,7 @@ function setup() {
       senpai.play();
 
       if (senpai.x > 100) {
-        senpai.vx = -8;
+        senpai.vx = -4;
         senpai.vy = 0;
       }
     }
@@ -57520,7 +57521,7 @@ function setup() {
       senpai.play();
 
       if (senpai.y > 100) {
-        senpai.vy = -8;
+        senpai.vy = -4;
         senpai.vx = 0;
       }
     }
@@ -57538,7 +57539,7 @@ function setup() {
       senpai.play();
 
       if (senpai.x < app.screen.width - 100) {
-        senpai.vx = 8;
+        senpai.vx = 4;
         senpai.vy = 0;
       }
     }
@@ -57558,16 +57559,26 @@ function setup() {
       }
 
       if (senpai.y < app.screen.height - 185) {
-        senpai.vy = 8;
+        senpai.vy = 4;
         senpai.vx = 0;
       }
     }
-  }; // down.release = () => {
-  // 	if (!up.isDown && kouhai.vx === 0) {
-  // 		kouhai.vy = 0;
-  // 	}
-  // };
-  //Set the game state
+  }; //spacebar
+
+
+  space.press = function () {
+    if (Math.abs(senpai.vx) > 0 || Math.abs(senpai.vy) > 0) {
+      senpai.vx *= 3;
+      senpai.vy *= 3;
+    }
+  };
+
+  space.release = function () {
+    if (Math.abs(senpai.vx) > 0 || Math.abs(senpai.vy) > 0) {
+      senpai.vx /= 3;
+      senpai.vy /= 3;
+    }
+  }; //Set the game state
 
 
   state = play; //Start the game loop
