@@ -116,7 +116,7 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
   id: "instructions"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Promise.HS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Await-Senpai and Async-Kouhai are the best of friends!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "They have a standing ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
   className: "shiny"
-}, "Promise"), " to hang out together after school."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Help Await-Senpai finish their tasks before returning to their kouhai so they can be a good role model!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Watch out for Catch-sensei!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If Catch-sensei tags Await-Senpai, their plans will be ruined!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Use the arrow keys to direct Await-Senpai."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Await-Senpai can be a bit focused, so they'll keep going until they bump into walls or objects.")))), document.getElementById("app"));
+}, "Promise"), " to hang out together after school."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Help Await-Senpai finish their tasks before returning to their kouhai so they can be a good role model!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("b", null, "Watch out for Catch-sensei!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "If Catch-sensei tags Await-Senpai, their plans will be ruined!"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Use the arrow keys to direct Await-Senpai."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Await-Senpai can be a bit focused, so they'll keep going until they bump into walls or objects.")))), document.getElementById("app"));
 
 /***/ }),
 
@@ -41355,9 +41355,9 @@ __webpack_require__.r(__webpack_exports__);
 // Imports
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
-___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.i, "@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, ":root {\n\t--main-bg-color: rgba(36, 189, 194, 0.397);\n\t--accent: rgba(249, 255, 169, 0.911);\n}\nbody {\n\tfont-family: \"Georgia\", serif;\n\n\tdisplay: flex;\n}\n#app {\n\tmax-width: 200px;\n\tpadding: 3rem;\n\tmargin: 2rem;\n\tborder: solid 2px var(--main-bg-color);\n\toutline-offset: 1rem;\n\toutline: 3px solid var(--main-bg-color);\n}\n#pixi {\n\talign-self: center;\n\tpadding: 8px;\n\tbackground: repeating-linear-gradient(\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t),\n\t\trepeating-linear-gradient(\n\t\t\t90deg,\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t);\n\n\toverflow: hidden;\n}\n", "",{"version":3,"sources":["webpack://public/style.css"],"names":[],"mappings":"AACA;CACC,0CAA0C;CAC1C,oCAAoC;AACrC;AACA;CACC,6BAA6B;;CAE7B,aAAa;AACd;AACA;CACC,gBAAgB;CAChB,aAAa;CACb,YAAY;CACZ,sCAAsC;CACtC,oBAAoB;CACpB,uCAAuC;AACxC;AACA;CACC,kBAAkB;CAClB,YAAY;CACZ;;;;;;;;;;;;;;;;;;;;GAoBE;;CAEF,gBAAgB;AACjB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&display=swap\");\n:root {\n\t--main-bg-color: rgba(36, 189, 194, 0.397);\n\t--accent: rgba(249, 255, 169, 0.911);\n}\nbody {\n\tfont-family: \"Georgia\", serif;\n\n\tdisplay: flex;\n}\n#app {\n\tmax-width: 200px;\n\tpadding: 3rem;\n\tmargin: 2rem;\n\tborder: solid 2px var(--main-bg-color);\n\toutline-offset: 1rem;\n\toutline: 3px solid var(--main-bg-color);\n}\n#pixi {\n\talign-self: center;\n\tpadding: 8px;\n\tbackground: repeating-linear-gradient(\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t),\n\t\trepeating-linear-gradient(\n\t\t\t90deg,\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t);\n\n\toverflow: hidden;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, ":root {\n\t--main-bg-color: rgba(36, 189, 194, 0.397);\n\t--accent: rgba(249, 255, 169, 0.911);\n\t--text-accent: #007ec7;\n}\n* {\n\tfont-family: \"Roboto Mono\", monospace;\n}\nbody {\n\talign-content: flex-start;\n\tdisplay: flex;\n}\n#app {\n\tmax-width: 200px;\n\tpadding: 1rem 3rem;\n\tmargin: 2rem;\n\tborder: solid 5px var(--main-bg-color);\n\toutline-offset: 1rem;\n\t/* outline: 3px solid var(--main-bg-color); */\n\toutline: 1rem solid #363636;\n}\nb,\n.shiny {\n\tcolor: var(--text-accent);\n\tfont-weight: 500;\n}\np {\n\tfont-size: smaller;\n}\n#pixi {\n\talign-self: center;\n\tpadding: 8px;\n\t/* background: repeating-linear-gradient(\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t),\n\t\trepeating-linear-gradient(\n\t\t\t90deg,\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t); */\n\tbackground-color: #363636;\n\toverflow: hidden;\n}\n", "",{"version":3,"sources":["webpack://public/style.css"],"names":[],"mappings":"AAEA;CACC,0CAA0C;CAC1C,oCAAoC;CACpC,sBAAsB;AACvB;AACA;CACC,qCAAqC;AACtC;AACA;CACC,yBAAyB;CACzB,aAAa;AACd;AACA;CACC,gBAAgB;CAChB,kBAAkB;CAClB,YAAY;CACZ,sCAAsC;CACtC,oBAAoB;CACpB,6CAA6C;CAC7C,2BAA2B;AAC5B;AACA;;CAEC,yBAAyB;CACzB,gBAAgB;AACjB;AACA;CACC,kBAAkB;AACnB;AACA;CACC,kBAAkB;CAClB,YAAY;CACZ;;;;;;;;;;;;;;;;;;;;MAoBK;CACL,yBAAyB;CACzB,gBAAgB;AACjB","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap\");\n\n:root {\n\t--main-bg-color: rgba(36, 189, 194, 0.397);\n\t--accent: rgba(249, 255, 169, 0.911);\n\t--text-accent: #007ec7;\n}\n* {\n\tfont-family: \"Roboto Mono\", monospace;\n}\nbody {\n\talign-content: flex-start;\n\tdisplay: flex;\n}\n#app {\n\tmax-width: 200px;\n\tpadding: 1rem 3rem;\n\tmargin: 2rem;\n\tborder: solid 5px var(--main-bg-color);\n\toutline-offset: 1rem;\n\t/* outline: 3px solid var(--main-bg-color); */\n\toutline: 1rem solid #363636;\n}\nb,\n.shiny {\n\tcolor: var(--text-accent);\n\tfont-weight: 500;\n}\np {\n\tfont-size: smaller;\n}\n#pixi {\n\talign-self: center;\n\tpadding: 8px;\n\t/* background: repeating-linear-gradient(\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t),\n\t\trepeating-linear-gradient(\n\t\t\t90deg,\n\t\t\tvar(--main-bg-color) 0px,\n\t\t\tvar(--main-bg-color) 16px,\n\t\t\tvar(--accent) 16px,\n\t\t\tvar(--accent) 17px,\n\t\t\tvar(--main-bg-color) 17px,\n\t\t\tvar(--main-bg-color) 33px,\n\t\t\t#ffffff 33px,\n\t\t\t#ffffff 34px\n\t\t); */\n\tbackground-color: #363636;\n\toverflow: hidden;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -57325,6 +57325,42 @@ module.exports = function (module) {
 var _require = __webpack_require__(/*! pixi.js */ "./node_modules/pixi.js/lib/pixi.es.js"),
     Rectangle = _require.Rectangle;
 
+window.WebFontConfig = {
+  google: {
+    families: ["Roboto Mono"]
+  },
+  active: function active() {
+    init();
+  }
+};
+/* eslint-disable */
+// include the web-font loader script
+
+(function () {
+  var wf = document.createElement("script");
+  wf.src = "".concat(document.location.protocol === "https:" ? "https" : "http", "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js");
+  wf.type = "text/javascript";
+  wf.async = "true";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(wf, s);
+})();
+/* eslint-enabled */
+
+
+function init() {// // create some white text using the Snippet webfont
+  // const textSample = new PIXI.Text(
+  // 	'Pixi.js text using the\ncustom "Snippet" Webfont',
+  // 	{
+  // 		fontFamily: "Roboto Mono",
+  // 		fontSize: 50,
+  // 		fill: "white",
+  // 		align: "left",
+  // 	}
+  // );
+  // textSample.position.set(50, 200);
+  // app.stage.addChild(textSample);
+}
+
 var app = new PIXI.Application({
   transparent: true,
   width: window.innerWidth / 3 * 2,
@@ -57342,7 +57378,7 @@ var book;
 var walls = []; //fancy font
 
 var style = new PIXI.TextStyle({
-  fontFamily: "Georgia",
+  fontFamily: "Roboto Mono",
   fontSize: 20,
   fontWeight: "bold",
   fill: "#000000",
@@ -57353,14 +57389,14 @@ var style = new PIXI.TextStyle({
 }); //game rect
 
 var gameRect = new PIXI.Graphics();
-gameRect.beginFill(0x66ccff);
+gameRect.beginFill(0x007ec7);
 gameRect.lineStyle(5, 0xffffff, 1);
 gameRect.drawRect(75, 85, app.screen.width - 155, app.screen.height - 250);
 gameRect.endFill;
 app.stage.addChild(gameRect); //inventory window
 
 var inventory = new PIXI.Graphics();
-inventory.beginFill(0x66ccff);
+inventory.beginFill(0x24bdc2);
 inventory.lineStyle(5, 0xffffff, 1);
 inventory.drawRect(75, 10, app.screen.width - 155, 50);
 inventory.endFill;
@@ -57379,7 +57415,7 @@ app.stage.addChild(resetText); //info window
 
 var info = new PIXI.Graphics();
 info.beginFill(0xffffff);
-info.lineStyle(5, 0x66ccff, 1);
+info.lineStyle(5, 0x24bdc2, 1);
 info.drawRect(75, app.screen.height - 130, app.screen.width - 155, 100);
 info.endFill;
 app.stage.addChild(info);
@@ -57583,7 +57619,7 @@ function setup() {
 }
 
 function onClick(object) {
-  object.tint = 0xa9a9a9;
+  object.tint = 0x777ec7;
   reset();
 }
 

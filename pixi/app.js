@@ -1,5 +1,43 @@
 const { Rectangle } = require("pixi.js");
 
+window.WebFontConfig = {
+	google: {
+		families: ["Roboto Mono"],
+	},
+
+	active() {
+		init();
+	},
+};
+
+/* eslint-disable */
+// include the web-font loader script
+(function () {
+	const wf = document.createElement("script");
+	wf.src = `${
+		document.location.protocol === "https:" ? "https" : "http"
+	}://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js`;
+	wf.type = "text/javascript";
+	wf.async = "true";
+	const s = document.getElementsByTagName("script")[0];
+	s.parentNode.insertBefore(wf, s);
+})();
+/* eslint-enabled */
+
+function init() {
+	// // create some white text using the Snippet webfont
+	// const textSample = new PIXI.Text(
+	// 	'Pixi.js text using the\ncustom "Snippet" Webfont',
+	// 	{
+	// 		fontFamily: "Roboto Mono",
+	// 		fontSize: 50,
+	// 		fill: "white",
+	// 		align: "left",
+	// 	}
+	// );
+	// textSample.position.set(50, 200);
+	// app.stage.addChild(textSample);
+}
 const app = new PIXI.Application({
 	transparent: true,
 	width: (window.innerWidth / 3) * 2,
@@ -17,7 +55,7 @@ let book;
 let walls = [];
 //fancy font
 const style = new PIXI.TextStyle({
-	fontFamily: "Georgia",
+	fontFamily: "Roboto Mono",
 	fontSize: 20,
 	fontWeight: "bold",
 	fill: "#000000", // gradient
@@ -27,14 +65,14 @@ const style = new PIXI.TextStyle({
 });
 //game rect
 let gameRect = new PIXI.Graphics();
-gameRect.beginFill(0x66ccff);
+gameRect.beginFill(0x007ec7);
 gameRect.lineStyle(5, 0xffffff, 1);
 gameRect.drawRect(75, 85, app.screen.width - 155, app.screen.height - 250);
 gameRect.endFill;
 app.stage.addChild(gameRect);
 //inventory window
 let inventory = new PIXI.Graphics();
-inventory.beginFill(0x66ccff);
+inventory.beginFill(0x24bdc2);
 inventory.lineStyle(5, 0xffffff, 1);
 inventory.drawRect(75, 10, app.screen.width - 155, 50);
 inventory.endFill;
@@ -53,7 +91,7 @@ app.stage.addChild(resetText);
 //info window
 let info = new PIXI.Graphics();
 info.beginFill(0xffffff);
-info.lineStyle(5, 0x66ccff, 1);
+info.lineStyle(5, 0x24bdc2, 1);
 info.drawRect(75, app.screen.height - 130, app.screen.width - 155, 100);
 info.endFill;
 app.stage.addChild(info);
@@ -260,7 +298,7 @@ function setup() {
 	});
 }
 function onClick(object) {
-	object.tint = 0xa9a9a9;
+	object.tint = 0x777ec7;
 	reset();
 }
 function gameLoop(delta) {

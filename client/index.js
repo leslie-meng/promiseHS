@@ -24,7 +24,6 @@ ReactDOM.render(
 					Help Await-Senpai finish their tasks before returning to their kouhai
 					so they can be a good role model!
 				</p>
-				<br />
 				<b>Watch out for Catch-sensei!</b>
 				<p>If Catch-sensei tags Await-Senpai, their plans will be ruined!</p>
 				<br />

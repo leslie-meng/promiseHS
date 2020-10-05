@@ -1,25 +1,38 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;500&display=swap");
+
 :root {
 	--main-bg-color: rgba(36, 189, 194, 0.397);
 	--accent: rgba(249, 255, 169, 0.911);
+	--text-accent: #007ec7;
+}
+* {
+	font-family: "Roboto Mono", monospace;
 }
 body {
-	font-family: "Georgia", serif;
-
+	align-content: flex-start;
 	display: flex;
 }
 #app {
 	max-width: 200px;
-	padding: 3rem;
+	padding: 1rem 3rem;
 	margin: 2rem;
-	border: solid 2px var(--main-bg-color);
+	border: solid 5px var(--main-bg-color);
 	outline-offset: 1rem;
-	outline: 3px solid var(--main-bg-color);
+	/* outline: 3px solid var(--main-bg-color); */
+	outline: 1rem solid #363636;
+}
+b,
+.shiny {
+	color: var(--text-accent);
+	font-weight: 500;
+}
+p {
+	font-size: smaller;
 }
 #pixi {
 	align-self: center;
 	padding: 8px;
-	background: repeating-linear-gradient(
+	/* background: repeating-linear-gradient(
 			var(--main-bg-color) 0px,
 			var(--main-bg-color) 16px,
 			var(--accent) 16px,
@@ -39,7 +52,7 @@ body {
 			var(--main-bg-color) 33px,
 			#ffffff 33px,
 			#ffffff 34px
-		);
-
+		); */
+	background-color: #363636;
 	overflow: hidden;
 }
