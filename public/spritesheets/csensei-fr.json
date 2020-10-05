@@ -1,42 +1,40 @@
-{"frames": {
-
-"catch-fr0.png":
 {
-	"frame": {"x":0,"y":0,"w":16,"h":28},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
-	"sourceSize": {"w":16,"h":28},
-	"anchor": {"x":0.5,"y":0.5}
-},
-"catch-fr1.png":
-{
-	"frame": {"x":0,"y":28,"w":16,"h":28},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
-	"sourceSize": {"w":16,"h":28},
-	"anchor": {"x":0.5,"y":0.5}
-},
-"catch-fr2.png":
-{
-	"frame": {"x":0,"y":56,"w":16,"h":28},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":16,"h":28},
-	"sourceSize": {"w":16,"h":28},
-	"anchor": {"x":0.5,"y":0.5}
-}},
-"animations": {
-	"catch-fr": ["catch-fr0.png","catch-fr1.png","catch-fr2.png"]
-},
-"meta": {
-	"app": "https://www.codeandweb.com/texturepacker",
-	"version": "1.0",
-	"image": "csensei-fr.png",
-	"format": "RGBA8888",
-	"size": {"w":16,"h":84},
-	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:dcde3a46034693636e4eac4368c18af8:87f780b5986c369751d7fd196304d3fb:b85073a7b63018a84e15f840775b23eb$"
-}
+	"frames": {
+		"catch-fr0.png": {
+			"frame": { "x": 0, "y": 0, "w": 16, "h": 28 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 28 },
+			"sourceSize": { "w": 16, "h": 28 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"catch-fr1.png": {
+			"frame": { "x": 0, "y": 28, "w": 16, "h": 28 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 28 },
+			"sourceSize": { "w": 16, "h": 28 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"catch-fr2.png": {
+			"frame": { "x": 0, "y": 56, "w": 16, "h": 27 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 28 },
+			"sourceSize": { "w": 16, "h": 28 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		}
+	},
+	"animations": {
+		"catch-fr": ["catch-fr0.png", "catch-fr1.png", "catch-fr2.png"]
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "csensei-fr.png",
+		"format": "RGBA8888",
+		"size": { "w": 16, "h": 84 },
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:dcde3a46034693636e4eac4368c18af8:87f780b5986c369751d7fd196304d3fb:b85073a7b63018a84e15f840775b23eb$"
+	}
 }

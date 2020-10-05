@@ -1,42 +1,40 @@
-{"frames": {
-
-"asempai-br0.png":
 {
-	"frame": {"x":0,"y":0,"w":17,"h":29},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
-	"sourceSize": {"w":17,"h":29},
-	"anchor": {"x":0.5,"y":0.5}
-},
-"asempai-br1.png":
-{
-	"frame": {"x":17,"y":0,"w":17,"h":29},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
-	"sourceSize": {"w":17,"h":29},
-	"anchor": {"x":0.5,"y":0.5}
-},
-"asempai-br2.png":
-{
-	"frame": {"x":34,"y":0,"w":17,"h":29},
-	"rotated": false,
-	"trimmed": false,
-	"spriteSourceSize": {"x":0,"y":0,"w":17,"h":29},
-	"sourceSize": {"w":17,"h":29},
-	"anchor": {"x":0.5,"y":0.5}
-}},
-"animations": {
-	"asempai-br": ["asempai-br0.png","asempai-br1.png","asempai-br2.png"]
-},
-"meta": {
-	"app": "https://www.codeandweb.com/texturepacker",
-	"version": "1.0",
-	"image": "asempai-br.png",
-	"format": "RGBA8888",
-	"size": {"w":51,"h":29},
-	"scale": "1",
-	"smartupdate": "$TexturePacker:SmartUpdate:892e09e07a0e4ccd332beec47927c499:e8ea38c3ab4f1e02322cb1dd90eec96b:343695b9ce190b41e2799b351997fb5f$"
-}
+	"frames": {
+		"asempai-br0.png": {
+			"frame": { "x": 0, "y": 0, "w": 16, "h": 29 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 29 },
+			"sourceSize": { "w": 16, "h": 29 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"asempai-br1.png": {
+			"frame": { "x": 17, "y": 0, "w": 16, "h": 29 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 29 },
+			"sourceSize": { "w": 16, "h": 29 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		},
+		"asempai-br2.png": {
+			"frame": { "x": 35, "y": 0, "w": 16, "h": 29 },
+			"rotated": false,
+			"trimmed": false,
+			"spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 29 },
+			"sourceSize": { "w": 16, "h": 29 },
+			"anchor": { "x": 0.5, "y": 0.5 }
+		}
+	},
+	"animations": {
+		"asempai-br": ["asempai-br0.png", "asempai-br1.png", "asempai-br2.png"]
+	},
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "1.0",
+		"image": "asempai-br.png",
+		"format": "RGBA8888",
+		"size": { "w": 51, "h": 29 },
+		"scale": "1",
+		"smartupdate": "$TexturePacker:SmartUpdate:892e09e07a0e4ccd332beec47927c499:e8ea38c3ab4f1e02322cb1dd90eec96b:343695b9ce190b41e2799b351997fb5f$"
+	}
 }
